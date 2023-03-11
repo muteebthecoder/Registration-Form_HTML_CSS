@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="form">
+        <h1>Registration Form</h1>
+        <hr>
+        <!--form start-->
+        <form action="#">
+           <!--user name-->
+            <div class="row">
+                <div class="col">
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="col">
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+            <!--email-->
+            <div class="input-box">
+                <input type="email" placeholder="Email or Phone Number" required>
+            </div>
+            <!--password-->
+            <div class="row">
+                <div class="col">
+                    <input type="password" placeholder="Password" required>
+                </div>
+                <div class="col">
+                    <input type="password" placeholder="Confirm Password" required>
+                </div>
+            </div>
+            <!--gender-->
+            <div class="gender">Gender:
+                <div class="row">
+                    <div class="col"><input type="radio" name="gender">Male</div>
+                    <div class="col"><input type="radio" name="gender">Female</div>
+                    <div class="col"><input type="radio" name="gender">Custom</div>
+                </div>
+            </div>
+            <!--policy-->
+            <div class="chkbox">
+                <input type="checkbox" required> By clicking Sign Up, you agree to our <a href="">Terms</a> and <a href=""> Privacy Policy</a>.
+            </div>
+            <!--buttons-->
+            <div class="signup">
+                <input type="submit" class="btn sign" value="Register Now">
+            </div>
+            <div class="continue">
+                <p>OR</p>
+                <input type="button" class="btn fb" value="Continue with Facebook">
+                <input type="button" class="btn google" value="Continue with Google">
+            </div>
+        </form>
+        <!--form close-->
+        <hr>
+        <div class="already">
+            Already a member? <a href="">Sign in</a>
+        </div>
+    </div>
+
+</body>
+
+</html>

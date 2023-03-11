@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,700;1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: #4f3556;
+}
+
+.form {
+    width: 550px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+    border-radius: 20px;
+    margin: 10px 0;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    font-size: 18px;
+    background-color: #222;
+    padding: 10px 15px;
+    margin: 10px 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+/*name or password*/
+.row .col:first-child {
+    margin-right: 20px;
+}
+
+.gender {
+    font-size: 18px;
+}
+
+.gender .row .col {
+    display: flex;
+}
+
+.gender .row .col input {
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+.chkbox input {
+    width: auto;
+}
+
+.chkbox {
+    font-size: 14px;
+}
+
+.signup,
+.continue {
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.btn {
+    font-size 18px;
+    font-weight: 700;
+    padding: 10px 0;
+    margin: 10px 0;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.sign {
+    width: 40%;
+    font-size: 20px;
+    background-color: #5BB318;
+    box-shadow: inset 1px 1px 1px 0;
+    transition: all .4s;
+}
+
+.fb {
+    background-color: #4267B2;
+}
+
+.google {
+    background-color: #ff0000;
+}
+
+.sign:hover {
+    background-color: #2B7A0B;
+    box-shadow: 1px 1px 1px 0;
+    transition: all .4s;
+}
+
+.fb:hover {
+    background-color: #fff;
+    color: #4267B2;
+    transition: all .3s;
+}
+
+.google:hover {
+    background-color: #fff;
+    color: #ff0000;
+    transition: all .3s;
+}
+
+.already {
+    padding: 10px 0;
+    text-align: center;
+}
+
+a {
+    color: #4267B2;
+}
+/*For Responsive*/
+@media(max-width:800px) {
+    .form {
+        width: 400px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .row .col:first-child {
+        margin-right: 0px;
+    }
+
+    .gender .row {
+        display: flex;
+    }
+
+    .sign {
+        width: 50%;
+    }
+
+    input {
+        margin: 5px 0;
+    }
